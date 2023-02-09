@@ -1,6 +1,6 @@
 //Declaracion de parametros
 
-param location string = 'East US'
+param location string = resourceGroup().location
 
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
